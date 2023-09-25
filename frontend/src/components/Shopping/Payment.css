@@ -1,0 +1,12 @@
+.payment-btn {
+  background-color: rgb(141, 215, 218);
+  padding: 5px 20px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+.payment-btn:hover {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid grey;
+    transition: .5s;
+}

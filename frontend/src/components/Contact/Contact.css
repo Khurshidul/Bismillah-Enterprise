@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+.contact-page {
+  background-color: cadetblue;
+  margin: auto;
+  padding: 4rem;
+}
+.contact-page h1 {
+  color: #f1fe03;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin: auto;
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid black;
+}
+.contact-page p {
+  font-size: 15px;
+  font-weight: 400;
+  margin: auto;
+  width: 60%;
+  color: rgb(184, 206, 247);
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+.contact-form {
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+}
+.contact-form ul {
+  padding: 0;
+  margin: 0;
+}
+.contact-form ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 10px;
+  opacity: 0;
+  overflow: hidden;
+  display: block;
+  clear: both;
+  position: relative;
+  animation: fadeInUp 2s 2s;
+  animation-fill-mode: forwards;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  border: 0;
+  background: #115173;
+  height: 50px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 20px;
+  box-sizing: border-box;
+  outline: none;
+}
+textarea {
+  width: 100%;
+  border: 0;
+  background: #115173;
+  height: 50px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 150px;
+  outline: none;
+}
+.flat-button {
+  color: #bbffe6;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid #ffffff;
+  float: left;
+  border-radius: 4px;
+  background: #025643;
+  text-transform: uppercase;
+  float: right;
+  text-align: center;
+  margin-right: 10px;
+  &:hover {
+    background: 0 0;
+    color: white;
+    transition: 0.5s;
+  }
+}
+.address {
+  width: 100%;
+  color: #fe2803;
+  font-family: "Poppins", sans-serif;
+}
+.address h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin: auto;
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}

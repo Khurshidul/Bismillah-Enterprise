@@ -1,0 +1,13 @@
+* {
+  text-decoration: none;
+  margin: 0%;
+  padding: 0%;
+}
+.project-card {
+  padding: 1rem;
+  border-color: rgba(100, 148, 237, 0.591);
+}
+.project-card:hover {
+  scale: 1.05;
+  transition: 0.5s;
+}

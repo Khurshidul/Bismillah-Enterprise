@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.row {
+  margin: 2rem 0;
+}
+.why-should {
+  color: #fe2803;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  font-weight: 800;
+  margin: 2rem;
+  text-align: center;
+}
+.cart {
+  width: 90%;
+  height: fit-content;
+  margin: 0;
+  margin-left: 1rem;
+  padding: 0;
+  text-align: center;
+}
+.cart h3 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fe2803;
+  background: transparent;
+}
+.cart h1 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fe2803;
+  background: transparent;
+}
+.cart p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  color: rgb(36, 36, 36);
+}
+.cart-img {
+  width: 80%;
+  margin-left: 1rem;
+  padding: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .why-should {
+    color: rgba(3, 66, 71, 0.783);
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .cart {
+    box-shadow: 2px 2px 5px cornflowerblue;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 5px;
+    max-width: 100%;
+    text-align: center;
+    background-color: rgb(219, 217, 217);
+  }
+  .cart h3 {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgba(3, 78, 78, 0.753);
+    background: transparent;
+  }
+  .cart h1 {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgba(3, 78, 78, 0.753);
+    background: transparent;
+  }
+  .cart p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    color: rgb(28, 27, 27);
+  }
+  .cart-img {
+    margin: 2rem;
+    padding: 5px;
+    background-color: rgb(11, 172, 115);
+  }
+}

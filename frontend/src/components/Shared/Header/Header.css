@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Akronim&family=Carattere&family=Freehand&family=La+Belle+Aurore&family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+.top-nav-part {
+  background-color: black;
+  margin-left: 1rem;
+}
+.nav-menu {
+  display: flex;
+}
+#logo {
+  width: 50px;
+  height: 50px;
+  margin: 0 2rem;
+}
+#brand {
+  color: rgb(255, 251, 0);
+  font-size: xx-large;
+  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
+}
+span {
+  color: coral;
+}
+.circle {
+  border-radius: 50%;
+  padding: 1rem;
+}
+.cart-icon {
+  font-size: 20px;
+  color: rgb(2, 42, 85);
+}
+.count-shoppings {
+  width: fit-content;
+  margin-left: 2rem;
+  margin-top: -1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #fe2803;
+  color: white;
+  z-index: -1;
+}
+@media only screen and (max-width: 680px) {
+  #brand {
+    color: rgb(255, 251, 0);
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Freehand", cursive;
+    margin-top: 1rem;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 850px) {
+  .top-nav-part {
+    background-color: black;
+  }
+}

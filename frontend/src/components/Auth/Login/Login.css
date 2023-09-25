@@ -1,0 +1,71 @@
+* {
+  margin: auto;
+  padding: auto;
+  text-decoration: none;
+}
+#login-container {
+  background-image: url("../../../images/28094209_eid_23_01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+#login-heading {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border: 2px solid rgb(17, 14, 14);
+  border-radius: 5px;
+}
+#login-style {
+  margin-left: 50%;
+  padding-top: 5%;
+}
+.login-validation {
+  padding: 2%;
+  box-sizing: border-box;
+  box-shadow: 5px 10px 15px black;
+  border-radius: 20px;
+  background-color: transparent;
+  width: 30%;
+  height: 100%;
+  display: block;
+}
+#sb-btn {
+  padding: 10px 40%;
+  margin-top: 1em;
+}
+#google-login {
+  padding: 8px;
+  width: 100%;
+  margin: 1em 0;
+}
+@media only screen and (max-width: 675px) {
+  #login-style {
+    margin-left: 15%;
+    padding-top: 5vh;
+  }
+  .login-validation {
+    padding: 2%;
+    box-sizing: border-box;
+    box-shadow: 5px 10px 15px black;
+    border-radius: 20px;
+    background-color: rgb(218, 236, 251);
+    width: 70%;
+    height: 100%;
+    display: block;
+  }
+  #login-heading {
+    font-size: larger;
+  }
+
+  #submit-btn {
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 1em;
+  }
+  #google-login {
+    width: 100%;
+    margin: 1em 0;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+  }
+}

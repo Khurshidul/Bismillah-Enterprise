@@ -1,0 +1,26 @@
+.materials-card{
+    margin-bottom: 1rem;
+}
+.card-img{
+    width: 200px;
+    height: 250px;
+}
+.price{
+    color: rgb(255, 129, 2);
+    font-size: 20px;
+}
+.product-quantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+}
+.quan{
+    font-size: 20px;
+}
+.remove{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

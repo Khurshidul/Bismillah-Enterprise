@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.projects {
+  margin: 2rem;
+}
+#pjct_title {
+  font-family: "Bebas Neue", cursive;
+  text-align: end;
+  color: darkcyan;
+}
+.all-projects {
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 680px) {
+  .all-projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin: 0 1.2rem;
+  }
+}
