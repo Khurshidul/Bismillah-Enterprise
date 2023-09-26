@@ -15,7 +15,7 @@ export type Iservices = {
 };
 const AllProjects: React.FC<PropTypes> = () => {
   const { data } = useQuery("services", () =>
-    fetchData("https://bismillah-enterprise-zeta.vercel.app//services"),
+    fetchData("https://bismillah-enterprise-zeta.vercel.app/services"),
   );
   return (
     <div className="mat-container">
