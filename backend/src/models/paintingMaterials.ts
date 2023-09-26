@@ -26,7 +26,7 @@ const workSchema = new Schema<Imaterial>({
     type: Number,
     required: true,
     maxlength: 2,
-  }
+  },
 });
 const Material = model<Imaterial>("material", workSchema);
 export default Material;

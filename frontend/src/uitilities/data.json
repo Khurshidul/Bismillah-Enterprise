@@ -1,0 +1,110 @@
+[
+  {
+    "img": "https://i.ibb.co/342JBtZ/blades.jpg",
+    "materialName": "Blades",
+    "price": 15,
+    "discount": 2
+  },
+  {
+    "img": "https://i.ibb.co/MkNdY0P/caulk.jpg",
+    "materialName": "Chalk",
+    "price": 20,
+    "discount": 2
+  },
+  {
+    "img": "https://i.ibb.co/kh2nPZ0/dropcloth.jpg",
+    "materialName": "Drop Cloth",
+    "price": 30,
+    "discount": 3
+  },
+  {
+    "img": "https://i.ibb.co/svnJQg7/dust-mask.jpg",
+    "materialName": "Dust Mask",
+    "price": 4,
+    "discount": 0
+  },
+  {
+    "img": "https://i.ibb.co/qBQqGVW/electric-sander.jpg",
+    "materialName": "Electiric Sander",
+    "price": 250,
+    "discount": 5
+  },
+  {
+    "img": "https://i.ibb.co/5hGCk7f/gloves.jpg",
+    "materialName": "Gloves",
+    "price": 50,
+    "discount": 5
+  },
+  {
+    "img": "https://i.ibb.co/f243zW8/images-1.jpg",
+    "materialName": "Paint",
+    "price": 100,
+    "discount": 5
+  },
+  {
+    "img": "https://i.ibb.co/0DhDwkc/ladder.jpg",
+    "materialName": "Ladder",
+    "price": 100,
+    "discount": 5
+  },
+  {
+    "img": "https://i.ibb.co/BwB7cCD/painter-tape.jpg",
+    "materialName": "Painting Tape",
+    "price": 30,
+    "discount": 5
+  },
+  {
+    "img": "https://i.ibb.co/6NKVZwc/putty-knife.jpg",
+    "materialName": "Knife",
+    "price": 20,
+    "discount": 0
+  },
+  {
+    "img": "https://i.ibb.co/qgNXT9Y/safety-goggles.jpg",
+    "materialName": "Safety Goggles",
+    "price": 50,
+    "discount": 0
+  },
+  {
+    "img": "https://i.ibb.co/Xxr5qh1/sand-paper.jpg",
+    "materialName": "Sand Paper",
+    "price": 10,
+    "discount": 0
+  },
+  {
+    "img": "https://i.ibb.co/3WmrjmH/sanding-block.jpg",
+    "materialName": "Sanding Block",
+    "price": 20,
+    "discount": 0
+  },
+  {
+    "img": "https://i.ibb.co/68xMQrZ/screwdriver.png",
+    "materialName": "Screw Driver",
+    "price": 20,
+    "discount": 0
+  },
+  {
+    "img": "https://i.ibb.co/pr4bjxb/sponges.jpg",
+    "materialName": "Sponges",
+    "price": 60,
+    "discount": 0
+  },
+  {
+    "img": "https://i.ibb.co/R2S4GBZ/wall-cleaner.jpg",
+    "materialName": "Wall Cleaner",
+    "price": 80,
+    "discount": 0
+  },
+  {
+    "img": "https://i.ibb.co/4jPbYVY/wire-brush.jpg",
+    "materialName": "Wire Brush",
+    "price": 35,
+    "discount": 0
+  },
+  {
+    "img": "https://i.ibb.co/ynDnQGH/wood-filler.jpg",
+    "materialName": "Wood Filter",
+    "price": 15,
+    "discount": 0
+  }
+]

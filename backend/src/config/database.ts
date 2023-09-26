@@ -7,7 +7,9 @@ interface Err {
 }
 
 mongoose
-  .connect("mongodb://localhost/ask_qn")
+  .connect(
+    "mongodb+srv://bismillah:RajaRkhell@cluster0.n3ufssj.mongodb.net/?retryWrites=true&w=majority",
+  )
   .then(() => console.log("Connected to MongoDB..."))
   .catch((err: Err) =>
     console.error("Could not connect to MongoDB...", err.message),
