@@ -17,7 +17,7 @@ export type Imaterials = {
 
 const Materials: React.FC<PropTypes> = () => {
   const { data } = useQuery("materials", () =>
-    fetchData("http://localhost:5000/materials"),
+    fetchData("https://bismillah-enterprise-zeta.vercel.app/materials"),
   );
   const [noOfMaterial, setNoOfMaterial] = useState<any>(8);
   // const [isLoadMore, setIsLoadMore] = useState<any>(false);

@@ -9,7 +9,7 @@ interface PropTypes {}
 
 const AllMaterials: React.FC<PropTypes> = () => {
   const { data } = useQuery("materials", () =>
-    fetchData("http://localhost:5000/materials"),
+    fetchData("https://bismillah-enterprise-zeta.vercel.app/materials"),
   );
 
   return (

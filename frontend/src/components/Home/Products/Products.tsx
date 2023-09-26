@@ -30,7 +30,7 @@ const Products: React.FC<PropTypes> = () => {
         Completed <span style={{ color: "salmon" }}>Works</span>
       </h2>
       <div className="all-projects">
-        {works.map(work => (
+        {works.map((work) => (
           <Product work={work}></Product>
         ))}
       </div>

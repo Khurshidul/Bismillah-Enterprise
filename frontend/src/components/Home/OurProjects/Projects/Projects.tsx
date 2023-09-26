@@ -11,7 +11,7 @@ interface PropTypes {}
 
 const Projects: React.FC<PropTypes> = () => {
   const { data } = useQuery("services", () =>
-    fetchData("http://localhost:5000/services"),
+    fetchData("https://bismillah-enterprise-zeta.vercel.app//services"),
   );
   const [noOfProjects, setNoOfProjects] = useState<any>(4);
   const sliceData = data.slice(0, noOfProjects);
