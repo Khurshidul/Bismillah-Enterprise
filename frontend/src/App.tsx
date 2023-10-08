@@ -45,7 +45,7 @@ const App: React.FC<PropTypes> = () => {
         </Routes>
         <MessengerCustomerChat
           pageId="117993816707482"
-          appId="577880694458982"
+          appId="1259288758102262"
         />
         <Footer />
       </main>
