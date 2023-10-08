@@ -15,8 +15,7 @@ import Success from "./components/Shopping/Success";
 import Cancel from "./components/Shopping/Cancel";
 import PrivateRoute from "./routes/PrivateRoute";
 import Secret from "./routes/Secret";
-import Mesenger from "./components/Shared/Mesenger/Mesenger";
-// import { MessengerCustomerChat } from "typescript-react-facebook-messenger";
+import { MessengerCustomerChat } from "typescript-react-facebook-messenger";
 interface PropTypes {}
 
 const App: React.FC<PropTypes> = () => {
@@ -44,7 +43,10 @@ const App: React.FC<PropTypes> = () => {
           <Route path="/success" element={<Success />}></Route>
           <Route path="/cancel" element={<Cancel />}></Route>
         </Routes>
-        <Mesenger />
+        <MessengerCustomerChat
+          pageId="117993816707482"
+          appId="577880694458982"
+        />
         <Footer />
       </main>
     </ShoppingCartProvider>
