@@ -10,13 +10,13 @@ import AllMaterials from "./components/AllMaterials/AllMaterials";
 import Contact from "./components/Contact/Contact";
 import Opportunities from "./components/Opportunities/Opportunities";
 import AllProjects from "./components/Home/OurProjects/AllProjects/AllProjects";
-
 import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 import Success from "./components/Shopping/Success";
 import Cancel from "./components/Shopping/Cancel";
 import PrivateRoute from "./routes/PrivateRoute";
 import Secret from "./routes/Secret";
 import Mesenger from "./components/Shared/Mesenger/Mesenger";
+// import { MessengerCustomerChat } from "typescript-react-facebook-messenger";
 interface PropTypes {}
 
 const App: React.FC<PropTypes> = () => {

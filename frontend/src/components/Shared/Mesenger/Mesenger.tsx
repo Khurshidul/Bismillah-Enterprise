@@ -1,5 +1,4 @@
-import React from "react";
-import MessengerCustomerChat from "react-messenger-customer-chat";
+import { MessengerCustomerChat } from "typescript-react-facebook-messenger";
 
 const Mesenger = () => {
   return (
