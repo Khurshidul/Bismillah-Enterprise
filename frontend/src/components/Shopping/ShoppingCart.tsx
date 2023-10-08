@@ -1,15 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Button, Col, Offcanvas, Row, Stack } from "react-bootstrap";
 import { useShoppingCart } from "../../context/ShoppingCartContext";
-import CartItem from "./CartItem";
 import { formatCurrency } from "../../uitilities/formatCurrency";
 import { useQuery } from "react-query";
 import fetchData from "../FetchData/fetchData";
 import { Imaterials } from "../Materials/Materials";
+import CartItem from "./CartItem";
 
 interface PropTypes {
   isOpen: boolean;
-  cartItems: any;
+  cartItem: CarttItem;
 }
 type orderType = {
   customerName: string;
@@ -23,15 +23,17 @@ const initialStateOrder = {
   email: "",
   phone: 0,
 };
-
-const ShoppingCart: React.FC<PropTypes> = ({ isOpen, cartItems }) => {
+type CarttItem = {
+  id: string;
+  quantity: number;
+};
+const ShoppingCart: React.FC<PropTypes> = ({ isOpen, cartItem }) => {
   const { data } = useQuery("materials", () =>
-    fetchData("http://localhost:5000/materials"),
+    fetchData("https://bismillah-enterprise-zeta.vercel.app/materials"),
   );
   const { closeCart, items } = useShoppingCart();
-  const item = data.find((i: Imaterials) => i._id === cartItems.id);
-  // if (item == null) return null;
-  console.log(item);
+
+  const item = data.find((i: Imaterials) => i._id === cartItem.id);
 
   const textInput = useRef<any>(null);
   const [order, setOrder] = useState<orderType>(initialStateOrder);
@@ -42,7 +44,7 @@ const ShoppingCart: React.FC<PropTypes> = ({ isOpen, cartItems }) => {
   };
 
   const handlePayment = () => {
-    fetch("http://localhost:5000/checkout", {
+    fetch("https://bismillah-enterprise-zeta.vercel.app/checkout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -51,14 +53,14 @@ const ShoppingCart: React.FC<PropTypes> = ({ isOpen, cartItems }) => {
       body: JSON.stringify({
         orderItems: [
           {
-            id: cartItems.id,
+            id: cartItem.id,
             customerName: order.customerName,
             address: order.address,
             email: order.email,
             phone: order.phone,
             productName: item.materialName,
             price: item.price,
-            quantity: cartItems.quantity,
+            quantity: cartItem.quantity,
           },
         ],
       }),
@@ -77,11 +79,7 @@ const ShoppingCart: React.FC<PropTypes> = ({ isOpen, cartItems }) => {
   };
 
   return (
-    <Offcanvas
-      show={isOpen}
-      onHide={closeCart}
-      placement="end"
-      height="100">
+    <Offcanvas show={isOpen} onHide={closeCart} placement="end" height="100">
       <Offcanvas.Header closeButton>
         <Offcanvas.Title>Feel Free To Shop</Offcanvas.Title>
       </Offcanvas.Header>

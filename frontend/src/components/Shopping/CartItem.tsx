@@ -13,7 +13,7 @@ interface PropTypes {
 
 const CartItem: React.FC<PropTypes> = ({ id, quantity }) => {
   const { data } = useQuery("materials", () =>
-    fetchData("http://localhost:5000/materials"),
+    fetchData("https://bismillah-enterprise-zeta.vercel.app/materials"),
   );
   const { removeItems } = useShoppingCart();
   const item = data.find((i: Imaterials) => i._id === id);

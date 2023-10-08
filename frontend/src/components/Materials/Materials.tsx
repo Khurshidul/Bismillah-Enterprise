@@ -5,7 +5,6 @@ import { useQuery } from "react-query";
 import Material from "../Home/Material/Material";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import AllMaterials from "../AllMaterials/AllMaterials";
 interface PropTypes {}
 export type Imaterials = {
   _id: string;

@@ -27,7 +27,7 @@ export const ShoppingCartProvider = ({
 }: shoppingCartProviderProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [items, setItems] = useState<CartItem[]>([]);
-
+  // const [cartItem, setCartItem] = useState<CartItem>();
   const cartQuantity = items.reduce(
     (quantity, item) => item.quantity + quantity,
     0,
@@ -76,6 +76,9 @@ export const ShoppingCartProvider = ({
       return currItems.filter((item) => item.id !== id);
     });
   };
+  // items.map((cartItem) => {
+  //   setCartItem(cartItem);
+  // });
   return (
     <ShoppingCartContext.Provider
       value={{
@@ -91,7 +94,11 @@ export const ShoppingCartProvider = ({
       {children}
       <>
         {items.map((cartItems) => (
-          <ShoppingCart isOpen={isOpen} cartItems={cartItems} />
+          <ShoppingCart
+            isOpen={isOpen}
+            key={cartItems.id}
+            cartItem={cartItems}
+          />
         ))}
       </>
     </ShoppingCartContext.Provider>

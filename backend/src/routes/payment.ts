@@ -1,8 +1,6 @@
 import * as dotenv from "dotenv";
 dotenv.config();
 import express, { Request, Response } from "express";
-import Material from "../models/paintingMaterials";
-import { ObjectId } from "mongodb";
 // import Payment, { validatePayment } from "../models/stripePayment";
 
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
@@ -19,8 +17,6 @@ type paymentOrder = {
   price: number;
 };
 
-
-
 router.post("/", async (req: Request, res: Response) => {
   const subscription_items = req.body.orderItems.map((item: paymentOrder) => {
     return {
@@ -29,7 +25,7 @@ router.post("/", async (req: Request, res: Response) => {
         product_data: {
           name: item.customerName,
         },
-        unit_amount: (item.price) * 100,
+        unit_amount: item.price * 100,
       },
       quantity: item.quantity,
     };
