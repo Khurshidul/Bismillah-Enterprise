@@ -16,6 +16,7 @@ import Success from "./components/Shopping/Success";
 import Cancel from "./components/Shopping/Cancel";
 import PrivateRoute from "./routes/PrivateRoute";
 import Secret from "./routes/Secret";
+import Mesenger from "./components/Shared/Mesenger/Mesenger";
 interface PropTypes {}
 
 const App: React.FC<PropTypes> = () => {
@@ -43,6 +44,7 @@ const App: React.FC<PropTypes> = () => {
           <Route path="/success" element={<Success />}></Route>
           <Route path="/cancel" element={<Cancel />}></Route>
         </Routes>
+        <Mesenger />
         <Footer />
       </main>
     </ShoppingCartProvider>
