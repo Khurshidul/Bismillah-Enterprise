@@ -8,11 +8,7 @@ const app = express();
 const material = require("./routes/paintingMaterial");
 const services = require("./routes/services");
 const payment = require("./routes/payment");
-app.use(
-  cors({
-    origin: "https://lighthearted-cannoli-141dbc.netlify.app/",
-  }),
-);
+app.use(cors());
 // app.use(cors);
 app.use(express.json());
 app.use("/materials", material);
