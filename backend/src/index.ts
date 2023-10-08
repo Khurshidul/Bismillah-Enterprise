@@ -10,7 +10,7 @@ const services = require("./routes/services");
 const payment = require("./routes/payment");
 app.use(
   cors({
-    origin: "http://localhost:3000/",
+    origin: "https://lighthearted-cannoli-141dbc.netlify.app/",
   }),
 );
 // app.use(cors);
