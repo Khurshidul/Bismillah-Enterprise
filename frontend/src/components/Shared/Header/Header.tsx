@@ -29,8 +29,10 @@ const Header: React.FC<PropTypes> = () => {
           K & K <span>Painting</span>
         </Navbar.Brand>
       </Col>
-      {cartQuantity > 0 && (
-        <Col lg={1} md={1} xs={3} sm={3}>
+      {cartQuantity > 0 ?
+      
+      (
+        <Col className="cart-count" lg={1} md={1} xs={3} sm={3}>
           <button className="circle" onClick={openCart}>
             <FontAwesomeIcon className="cart-icon" icon={faCartShopping} />
           </button>
@@ -38,7 +40,19 @@ const Header: React.FC<PropTypes> = () => {
             <small>{cartQuantity}</small>
           </div>
         </Col>
-      )}
+      )
+    :
+    (
+      <Col className="cart-count" lg={1} md={1} xs={3} sm={3}>
+        <button className="circle" onClick={openCart}>
+          <FontAwesomeIcon className="cart-icon" icon={faCartShopping} />
+        </button>
+        <div className="count-shoppings">
+          <small>0</small>
+        </div>
+      </Col>
+    )
+    }
     </Row>
   );
 };

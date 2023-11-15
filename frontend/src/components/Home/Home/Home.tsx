@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './Home.css'
 import Banner from "../Banner/Banner";
 import Materials from "../../Materials/Materials";
 import GooogleMap from "../GoogleMap/GoogleMap";
@@ -11,7 +12,7 @@ interface PropTypes {}
 
 const Home: React.FC<PropTypes> = () => {
   return (
-    <div>
+    <div className="home">
       <Banner />
       <Cart />
       <Select />
@@ -19,7 +20,7 @@ const Home: React.FC<PropTypes> = () => {
       <Materials />
       <Counter />
       {/* <GooogleMap /> */}
-      {/* <Mesenger/> */}
+      <Mesenger/>
     </div>
   );
 };

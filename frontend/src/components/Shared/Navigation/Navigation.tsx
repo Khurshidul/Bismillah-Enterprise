@@ -46,8 +46,7 @@ const Navigation: React.FC<PropTypes> = () => {
           <Container className="navbar-list">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="navbar-list">
-                <Nav>
+              <Nav className="navbar-list" defaultActiveKey="/home#home">
                   <Nav.Link
                     active
                     className="navList"
@@ -70,7 +69,6 @@ const Navigation: React.FC<PropTypes> = () => {
                   <Nav.Link className="navList" as={Link} to="/admin">
                     <h6>About Us</h6>
                   </Nav.Link>
-                </Nav>
               </Nav>
             </Navbar.Collapse>
           </Container>

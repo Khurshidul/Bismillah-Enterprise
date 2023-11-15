@@ -79,7 +79,7 @@ const ShoppingCart: React.FC<PropTypes> = ({ isOpen, cartItem }) => {
   };
 
   return (
-    <Offcanvas show={isOpen} onHide={closeCart} placement="end" height="100">
+    <Offcanvas  style={{overflow:"scroll"}} show={isOpen} onHide={closeCart} placement="end" height="100">
       <Offcanvas.Header closeButton>
         <Offcanvas.Title>Feel Free To Shop</Offcanvas.Title>
       </Offcanvas.Header>

@@ -7,14 +7,15 @@
 }
 .row {
   margin: 2rem 0;
+  max-width: 100%;
 }
 .why-should {
   color: #fe2803;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
   font-weight: 800;
-  margin: 2rem;
   text-align: center;
+  width: 90%;
 }
 .cart {
   width: 90%;

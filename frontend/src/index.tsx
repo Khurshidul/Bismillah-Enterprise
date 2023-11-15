@@ -8,6 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import Loading from "./components/Loading/Loading";
 import AuthProvider from "./context/AuthProvider";
+import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 const client = new QueryClient({
   defaultOptions: {
     queries: {
@@ -17,22 +18,23 @@ const client = new QueryClient({
 });
 
 const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement,
+  document.getElementById("root") as HTMLElement
 );
 
 root.render(
   <BrowserRouter>
     <React.StrictMode>
       <QueryClientProvider client={client}>
-        <React.Suspense fallback={<Loading/>}>
+        <React.Suspense fallback={<Loading />}>
           <AuthProvider>
+          <ShoppingCartProvider>
             <App />
+            </ShoppingCartProvider>
           </AuthProvider>
         </React.Suspense>
       </QueryClientProvider>
     </React.StrictMode>
-  </BrowserRouter>,
+  </BrowserRouter>
 );
-
 
 reportWebVitals();

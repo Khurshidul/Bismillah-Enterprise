@@ -8,6 +8,7 @@
 .top-nav-part {
   background-color: black;
   margin-left: 1rem;
+  width: 100%;
 }
 .nav-menu {
   display: flex;
@@ -26,6 +27,7 @@
 span {
   color: coral;
 }
+
 .circle {
   border-radius: 50%;
   padding: 1rem;
@@ -41,9 +43,10 @@ span {
   padding: 0.5rem;
   border-radius: 50%;
   background-color: #fe2803;
-  color: white;
+  color: rgb(255, 255, 255);
   z-index: -1;
 }
+
 @media only screen and (max-width: 680px) {
   #brand {
     color: rgb(255, 251, 0);

@@ -20,9 +20,8 @@ interface PropTypes {}
 
 const App: React.FC<PropTypes> = () => {
   return (
-    <ShoppingCartProvider>
-      <main className="App">
-        <Header></Header>
+      <main>
+        <Header/>
         <Navigation />
         <Routes>
           <Route index element={<Home></Home>}></Route>
@@ -49,7 +48,6 @@ const App: React.FC<PropTypes> = () => {
         />
         <Footer />
       </main>
-    </ShoppingCartProvider>
   );
 };
 

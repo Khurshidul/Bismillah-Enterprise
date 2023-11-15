@@ -1,5 +1,9 @@
 * {
   box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+
 }
 .banner {
   display: flex;
@@ -8,8 +12,6 @@
 }
 .poster-img {
   margin-left: 5rem;
-  z-index: 1;
-  box-sizing: border-box;
 }
 .banner .poster-img img {
   width: 500px;
@@ -19,8 +21,6 @@
   width: 800px;
   height: 450px;
   margin: 3rem;
-  z-index: 1;
-  box-sizing: border-box;
   box-shadow: 0 5px 5px 5px rgb(162, 160, 160);
 }
 .carosel-item {
@@ -30,7 +30,6 @@
   width: 600px;
   height: 400px;
   padding: 0.2rem;
-  background-color: rgb(238, 255, 48);
 }
 @media only screen and (max-width: 600px) {
   .banner {
@@ -48,7 +47,6 @@
     width: 100%;
     height: fit-content;
     margin: 0;
-    z-index: 1;
     box-sizing: border-box;
     box-shadow: none;
   }
